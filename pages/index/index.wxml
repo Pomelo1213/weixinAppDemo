@@ -1,0 +1,141 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="hideSearch">
+    <view class="hide">
+      <span class="icon">
+        <icon stype="search" size="80"></icon>
+      </span>
+      <input type="search" placeholder="搜索相关内容" bindinput='bindUserInput'></input>
+    </view>
+  </view>
+
+  <view class="header clearfix">
+
+    <view class="title">
+      <view>今日推荐</view>
+      <view class="date">3月6日 星期二</view>
+    </view>
+
+    <view class="search">
+      <view class="searchContainer">
+        <span class="icon">
+          <icon type="search" size="10"></icon>
+        </span>
+        <input type="search" placeholder="搜索相关内容" bindtap='bindUserTap'></input>
+      </view>
+    </view>
+
+  </view>
+
+    <main>
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <!-- <text>{{autoplay}}</text> -->
+
+              <view class="imgContent">
+                <image src="{{item.img}}" class="slide-image"/>
+              </view>
+              <view class="swiperFooter">
+                <view class="footerHeader">{{item.title}}</view>
+                <view class="footerFooter">{{item.content}}</view>
+              </view> 
+
+          </swiper-item>
+        </block>
+      </swiper>
+
+
+      <view class="section">
+        <view class="fiveIcon">
+
+          <view>
+            <view class="iconWrap ieColor">
+              <span class="iconfont icon-ie"></span>
+            </view>
+            <view class="iconText">网络</view>
+          </view>
+
+          <view>
+            <view class="iconWrap moneyColor">
+              <span class="iconfont icon-money"></span>
+            </view>
+            <view class="iconText">经济</view>
+          </view>
+
+          <view>
+            <view class="iconWrap heartColor">
+              <span class="iconfont icon-heart"></span>
+            </view>
+            <view class="iconText">健康</view>
+          </view>
+
+          <view>
+            <view class="iconWrap lingColor">
+              <span class="iconfont icon-lingdaitie3"></span>
+            </view>
+            <view class="iconText">职场</view>
+          </view>
+
+          <view>
+            <view class="iconWrap moreColor">
+              <span class="iconfont icon-More"></span>
+            </view>
+            <view class="iconText">更多</view>
+          </view>
+
+        </view>
+      </view>
+
+
+      <view class="section">
+        <view class="freeProduct">
+          <view>限时免费</view>
+          <view>精品内容，限时限量</view>  
+        </view>
+
+        <view>
+          <image class="freeInfoHeader" src="{{tempFreeImage}}"/>
+          <view class="freeInfoFooter">
+            <view>
+              <view class="footerHeader">如何重塑自己的职业价值最终克服焦虑？</view>
+              <view class="footerFooter">
+                2017年，互联网人为什么会焦虑？我们焦虑的根本原因是什么？如何才能保持自己的价值稳步提升？点击立即收听！
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="section">
+        <view class="tuijian">编辑推荐</view>
+        <view class="newsList">
+          <view wx:for="{{infos}}" wx:for-item="info" wx:key="{{id}}" class="news clearfix">
+              <view class="newsLeft">
+                <view class="leftTitle">{{info.title}}</view>
+                <view class="leftInfo">{{info.content}}</view>
+              </view>
+              <image class="newsRight" src="{{info.pic}}"/>
+          </view>
+
+        </view>
+      </view>
+
+
+    </main>
+
+  <!--
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  -->
+</view>
