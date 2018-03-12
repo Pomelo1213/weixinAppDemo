@@ -47,6 +47,63 @@
   color: #aaa;
 }
 
+/* *******************底部Bar******************** */
+.bottomBar{
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  border-top: 1rpx solid #aaa;
+  display: flex;
+}
+
+.bottomBar .leftOption{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.optionIcon{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.optionIcon.left{
+  color: rgb(26, 77, 224);
+}
+
+.optionIcon span{
+  font-size: 45rpx;
+  color: #aaa;
+}
+
+.optionIcon text{
+  font-size: 28rpx;
+  color: #aaa;
+}
+
+.optionIcon span.barColor{
+  color: rgb(66, 139, 202);
+}
+
+.optionIcon text.barColor{
+  color: rgb(66, 139, 202);
+}
+
+.bottomBar .rightOption{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 /* *******************遮罩层******************** */
 .bodyCover{
   width: 100vw;
@@ -111,7 +168,6 @@ swiper{
 swiper-item{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 0 10rpx;
   box-sizing: border-box;
 }
@@ -158,13 +214,12 @@ swiper-item{
 }
 
 .footerFooter{
-  height: 100rpx;
   font-size: 25rpx;
   color: #aaa;
 }
 
 .section .fiveIcon{
-  padding: 20rpx 0;
+  padding: 30rpx 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -195,7 +250,8 @@ swiper-item{
   background-color: rgb(230, 102, 102);
 }
 .moneyColor span{
-  margin-left: 3rpx;
+  margin-top: 4rpx;
+  margin-left: 1rpx;
 }
 
 .heartColor{
@@ -208,6 +264,10 @@ swiper-item{
 
 .moreColor{
   background-color: grey;
+}
+
+.fiveIcon view{
+  margin-top: 10rpx;
 }
 
 .fiveIcon view span{
@@ -223,6 +283,7 @@ swiper-item{
 
 .free{
   border-bottom: 1rpx solid #aaa;
+  padding-bottom: 30rpx;
 }
 
 .freeProduct{
@@ -251,11 +312,10 @@ swiper-item{
 
 .news{
   margin-bottom: 60rpx;
-
 }
 
 .news:nth-child(2n+1){
-    border-bottom: 1rpx solid #aaa;
+  border-bottom: 1rpx solid #aaa;
 }
 
 .news:nth-child(2n+2){

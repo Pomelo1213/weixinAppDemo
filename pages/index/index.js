@@ -11,6 +11,7 @@ Page({
     bigFocus: false,
     smallFocus: false,
     bodyCover: false,
+    isBarClick: false,
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
@@ -56,11 +57,26 @@ Page({
   },
   bindSearchCancel: function(){
     this.setData({
-      searchName: 'hideSearch',
+      searchName: false,
       bodyCover: false
     })
   },
-
+  bindCoverTap: function(){
+    this.setData({
+      searchName: false,
+      bodyCover: false
+    })
+  },
+  bindLeftBar: function(){
+    this.setData({
+      isBarClick: false  //false为默认，默认左边的首页点击，为true就是右边Bar被点击
+    })
+  },
+  bindRightBar: function(){
+    this.setData({
+      isBarClick: true
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
@@ -96,29 +112,6 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  },
-
-  changeIndicatorDots: function (e) {
-    //console.log(e.currentTarget)
-    //console.log(e.detail)
-    this.setData({
-      indicatorDots: !this.data.indicatorDots
-    })
-    //console.log(this.getData(indicatorDots))
-  },
-  changeAutoplay: function (e) {
-    this.setData({
-      autoplay: !this.data.autoplay
-    })
-  },
-  intervalChange: function (e) {
-    this.setData({
-      interval: e.detail.value
-    })
-  },
-  durationChange: function (e) {
-    this.setData({
-      duration: e.detail.value
-    })
   }
+
 })
