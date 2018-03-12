@@ -7,9 +7,10 @@ Page({
     iconSize: 10,
     //iconColor: rgb(0, 255, 255),
     iconType: 'search',
-    searchName: 'hideSearch',
+    searchName: false,
     bigFocus: false,
     smallFocus: false,
+    bodyCover: false,
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
@@ -48,18 +49,18 @@ Page({
   //点击搜索框搜索
   bindUserTap: function(){
     this.setData({
-      searchName: 'hideSearch active',
-      bigFocus: true
+      searchName: true,
+      bigFocus: true,
+      bodyCover: true
     }) 
   },
   bindSearchCancel: function(){
     this.setData({
-      searchName: 'hideSearch'
+      searchName: 'hideSearch',
+      bodyCover: false
     })
   },
-  bindUserInput: function(){
-    
-  },
+
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

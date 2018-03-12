@@ -1,34 +1,14 @@
-/**index.wxss
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 10rpx;
-}
-**/
+/* *******************隐藏的输入框******************** */
 .hideSearch{
   width: 100%;
   position: fixed;
-  border: 1px solid black;
   background-color: white;
   box-sizing: border-box;
-  padding: 15rpx 20rpx;
+  padding: 28rpx 20rpx;
   z-index: 2;
   display: none;
+  transition: all 1s ease;
 }
 
 .hideSearch.active{
@@ -44,35 +24,39 @@
 
 .leftSearchPart{
   width: 87%;
-  border: 1px solid green;
   display: flex;
   border-radius: 30rpx;
+  background-color: rgb(240, 240, 240);
 }
 
 .leftSearchPart span{
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
   width: 10%;
 }
 
-/* .leftSearchPart span icon{
-
-} */
-
 .leftSearchPart input{
-  border: 1px solid orange;
   width: 90%;
   height: 100%;
+  font-size: 30rpx;
 }
 
 .rightSearchPart{
-  border: 1px solid red;
   font-size: 30rpx;
   color: #aaa;
 }
 
+/* *******************遮罩层******************** */
+.bodyCover{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(106, 106, 106, 0.5);
+  position: fixed;
+  z-index:1;
+}
+
+/* *******************container部分******************** */
 .header{
   padding: 5rpx 0;
   /* border: 1rpx solid green; */
@@ -96,7 +80,7 @@
 }
 
 .search{
-  border: 1rpx solid black;
+  background-color: rgb(240, 240, 240);
   float: right;
   margin-top: 17rpx;
   width: 30%;

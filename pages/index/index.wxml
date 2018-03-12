@@ -1,9 +1,9 @@
 <!--index.wxml-->
 
-  <view class="{{searchName}}">
+<view class="hideSearch {{searchName===true?'active':''}}">
     <view class="searchWrap">
       <view class="leftSearchPart">
-        <span><icon type="search" size="20"></icon></span>
+        <span><icon type="search" size="15"></icon></span>
         <input type="search" placeholder="搜索相关内容" focus="{{bigFocus}}"></input>
       </view>
 
@@ -11,7 +11,9 @@
     </view> 
   </view>
 
-<view class="container">
+<view class="{{bodyCover===true?'bodyCover':''}}"></view>
+
+<view class="container {{bodyCover===true?'noscroll':''}}">
 
   <view class="header clearfix">
     <view class="title">
@@ -124,21 +126,6 @@
         </view>
       </view>
 
-
     </main>
-
-  <!--
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-  -->
 </view>
 
