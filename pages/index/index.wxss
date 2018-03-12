@@ -54,7 +54,7 @@
   background-color: white;
   position: fixed;
   bottom: 0;
-  border-top: 1rpx solid #aaa;
+  border-top: 1rpx solid rgb(240, 240, 240);
   display: flex;
 }
 
@@ -227,7 +227,7 @@ swiper-item{
 }
 
 .fiveIcon{
-  border-bottom: 1rpx solid #aaa;
+  border-bottom: 1rpx solid rgb(240, 240, 240);
 }
 
 .fiveIcon .iconWrap{
@@ -250,8 +250,8 @@ swiper-item{
   background-color: rgb(230, 102, 102);
 }
 .moneyColor span{
-  margin-top: 4rpx;
-  margin-left: 1rpx;
+  margin-top: 3.5rpx;
+  margin-left: .5rpx;
 }
 
 .heartColor{
@@ -271,7 +271,7 @@ swiper-item{
 }
 
 .fiveIcon view span{
-  font-size: 60rpx;
+  font-size: 50rpx;
   color: white;
 }
 
@@ -282,7 +282,7 @@ swiper-item{
 }
 
 .free{
-  border-bottom: 1rpx solid #aaa;
+  border-bottom: 1rpx solid rgb(240, 240, 240);
   padding-bottom: 30rpx;
 }
 
@@ -315,7 +315,7 @@ swiper-item{
 }
 
 .news:nth-child(2n+1){
-  border-bottom: 1rpx solid #aaa;
+  border-bottom: 1rpx solid rgb(240, 240, 240);
 }
 
 .news:nth-child(2n+2){

@@ -71,10 +71,18 @@ Page({
     this.setData({
       isBarClick: false  //false为默认，默认左边的首页点击，为true就是右边Bar被点击
     })
+    if(isBarClick){
+      wx.navigateTo({
+        url: '../index/index'
+      })
+    }
   },
   bindRightBar: function(){
     this.setData({
       isBarClick: true
+    })
+    wx.navigateTo({
+      url: '../pay/pay'
     })
   },
   onLoad: function () {
