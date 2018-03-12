@@ -10,7 +10,7 @@
   box-sizing: border-box;
  */
   height: 100%;
-  padding: 28rpx;
+  padding: 20rpx;
   box-sizing: border-box;
 } 
 

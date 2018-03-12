@@ -21,10 +21,56 @@
 }
 **/
 .hideSearch{
-  border: 1px solid #aaa;
-  font-size: 50rpx;
-  line-height: 50rpx;
-  border-radius: 50rpx;
+  width: 100%;
+  position: fixed;
+  border: 1px solid black;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 15rpx 20rpx;
+  z-index: 2;
+  display: none;
+}
+
+.hideSearch.active{
+  display: block;
+}
+
+.searchWrap{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftSearchPart{
+  width: 87%;
+  border: 1px solid green;
+  display: flex;
+  border-radius: 30rpx;
+}
+
+.leftSearchPart span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  width: 10%;
+}
+
+/* .leftSearchPart span icon{
+
+} */
+
+.leftSearchPart input{
+  border: 1px solid orange;
+  width: 90%;
+  height: 100%;
+}
+
+.rightSearchPart{
+  border: 1px solid red;
+  font-size: 30rpx;
+  color: #aaa;
 }
 
 .header{
@@ -157,9 +203,15 @@ swiper-item{
 .ieColor{
   background-color: rgb(26, 77, 224);
 }
+.ieColor span{
+  margin-left: -1rpx;
+}
 
 .moneyColor{
   background-color: rgb(230, 102, 102);
+}
+.moneyColor span{
+  margin-left: 3rpx;
 }
 
 .heartColor{
@@ -175,17 +227,18 @@ swiper-item{
 }
 
 .fiveIcon view span{
-  margin-top: 3rpx;
   font-size: 60rpx;
   color: white;
 }
-
-
 
 .fiveIcon .iconText{
   font-size: 25rpx;
   margin: 10rpx 0 30rpx 15rpx;
 
+}
+
+.free{
+  border-bottom: 1rpx solid #aaa;
 }
 
 .freeProduct{

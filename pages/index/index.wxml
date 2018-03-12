@@ -1,17 +1,19 @@
 <!--index.wxml-->
-<view class="container">
 
-  <view class="hideSearch">
-    <view class="hide">
-      <span class="icon">
-        <icon stype="search" size="80"></icon>
-      </span>
-      <input type="search" placeholder="搜索相关内容" bindinput='bindUserInput'></input>
-    </view>
+  <view class="{{searchName}}">
+    <view class="searchWrap">
+      <view class="leftSearchPart">
+        <span><icon type="search" size="20"></icon></span>
+        <input type="search" placeholder="搜索相关内容" focus="{{bigFocus}}"></input>
+      </view>
+
+      <view class="rightSearchPart" bindtap="bindSearchCancel"><text>取消</text></view>
+    </view> 
   </view>
 
-  <view class="header clearfix">
+<view class="container">
 
+  <view class="header clearfix">
     <view class="title">
       <view>今日推荐</view>
       <view class="date">3月6日 星期二</view>
@@ -22,7 +24,7 @@
         <span class="icon">
           <icon type="search" size="10"></icon>
         </span>
-        <input type="search" placeholder="搜索相关内容" bindtap='bindUserTap'></input>
+        <input type="search" placeholder="搜索相关内容" bindtap="bindUserTap" focus="{{smallFocus}}"></input>
       </view>
     </view>
 
@@ -95,7 +97,7 @@
           <view>精品内容，限时限量</view>  
         </view>
 
-        <view>
+        <view class="free">
           <image class="freeInfoHeader" src="{{tempFreeImage}}"/>
           <view class="freeInfoFooter">
             <view>
@@ -139,3 +141,4 @@
   </view>
   -->
 </view>
+

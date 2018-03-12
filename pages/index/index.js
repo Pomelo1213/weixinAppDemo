@@ -7,6 +7,9 @@ Page({
     iconSize: 10,
     //iconColor: rgb(0, 255, 255),
     iconType: 'search',
+    searchName: 'hideSearch',
+    bigFocus: false,
+    smallFocus: false,
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
@@ -42,8 +45,19 @@ Page({
       url: '../logs/logs'
     })
   },
-  //搜索框搜索
+  //点击搜索框搜索
   bindUserTap: function(){
+    this.setData({
+      searchName: 'hideSearch active',
+      bigFocus: true
+    }) 
+  },
+  bindSearchCancel: function(){
+    this.setData({
+      searchName: 'hideSearch'
+    })
+  },
+  bindUserInput: function(){
     
   },
   onLoad: function () {
