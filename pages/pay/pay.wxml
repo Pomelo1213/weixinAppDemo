@@ -1,1 +1,23 @@
-hello
+
+<view class="container">
+
+
+
+  <block wx:if="{{hasUserInfo===false}}"> 
+    <view class="infoTip">
+      <text>登录后即可继续操作</text>
+    </view>
+    <view class="buttonWrap">
+      <button type="primary" bindtap="bindUserLogin">微信快捷登录</button>
+      <button type="default">手机号登录</button>
+    </view>
+  </block>
+
+  <block wx:if="{{hasUserInfo===true}}">
+    <view class="userWrap">
+      <image class="userAvatar" src="{{userInfo.avatarUrl}}"></image>
+      <view><text class="userNickName">{{userInfo.nickName}}，你已登录成功！</text></view>
+    </view>
+  </block>
+
+</view>

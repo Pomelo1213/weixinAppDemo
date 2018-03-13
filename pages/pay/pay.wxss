@@ -1,1 +1,25 @@
-/* pages/pay/pay.wxss */
+.infoTip{
+  font-size: 40rpx;
+  margin: 50rpx 0;
+  text-align: center;
+}
+
+.buttonWrap button:nth-child(1){
+  margin: 50rpx 0;
+}
+
+.userWrap{
+  margin-top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userAvatar{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  display: block;
+  margin-bottom:20rpx;
+}

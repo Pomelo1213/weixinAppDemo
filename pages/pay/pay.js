@@ -1,11 +1,36 @@
 // pages/pay/pay.js
+var app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    hasUserInfo: false
+  },
+
+  bindUserLogin: function(){
+    var that = this
+    console.log(this.data.hasUserInfo)
+    if (!this.data.hasUserInfo){
+      wx.login({
+        success: _getUserInfo
+      })
+    }else{
+      _getUserInfo()
+    }
+    function _getUserInfo(){
+      wx.getUserInfo({
+        success: function(res){
+          that.setData({
+            userInfo: res.userInfo,
+            hasUserInfo: true
+          })
+          that.update()
+        }
+      })
+    }
   },
 
   /**

@@ -67,19 +67,6 @@ Page({
       bodyCover: false
     })
   },
-  bindLeftBar: function(){
-    this.setData({
-      isBarClick: false  //false为默认，默认左边的首页点击，为true就是右边Bar被点击
-    })
-  },
-  bindRightBar: function(){
-    this.setData({
-      isBarClick: true
-    })
-    wx.navigateTo({
-      url: '../pay/pay',
-    })
-  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

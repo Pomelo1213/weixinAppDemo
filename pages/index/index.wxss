@@ -47,62 +47,6 @@
   color: #aaa;
 }
 
-/* *******************底部Bar******************** */
-.bottomBar{
-  width: 100%;
-  height: 100rpx;
-  background-color: white;
-  position: fixed;
-  bottom: 0;
-  border-top: 1rpx solid rgb(240, 240, 240);
-  display: flex;
-}
-
-.bottomBar .leftOption{
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.optionIcon{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-.optionIcon.left{
-  color: rgb(26, 77, 224);
-}
-
-.optionIcon span{
-  font-size: 45rpx;
-  color: #aaa;
-}
-
-.optionIcon text{
-  font-size: 28rpx;
-  color: #aaa;
-}
-
-.optionIcon span.barColor{
-  color: rgb(66, 139, 202);
-}
-
-.optionIcon text.barColor{
-  color: rgb(66, 139, 202);
-}
-
-.bottomBar .rightOption{
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 /* *******************遮罩层******************** */
 .bodyCover{
