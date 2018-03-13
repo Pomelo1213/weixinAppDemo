@@ -14,7 +14,7 @@
 <view class="{{bodyCover===true?'bodyCover':''}}" bindtap="bindCoverTap"></view>
 
 
-<view class="bottomBar">
+<!-- <view class="bottomBar">
   <view class="leftOption" bindtap="bindLeftBar">
     <view class="optionIcon">
       <span class="iconfont icon-star2 {{isBarClick===false?'barColor':''}}"></span>
@@ -27,7 +27,7 @@
       <text class="{{isBarClick===true?'barColor':''}}">已购</text>
     </view>
   </view>
-</view>
+</view> -->
 
 <view class="container {{bodyCover===true?'noscroll':''}}">
   <view class="header clearfix">

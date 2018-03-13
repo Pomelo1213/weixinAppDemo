@@ -9,5 +9,26 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "rgb(18, 150, 219)",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/homePage.png",
+        "selectedIconPath": "image/homePage_HL.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/pay/pay",
+        "iconPath": "image/pay.png",
+        "selectedIconPath": "image/pay_HL.png",
+        "text": "已购"
+      }
+    ]
   }
+
 }
