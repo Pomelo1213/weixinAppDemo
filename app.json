@@ -1,8 +1,11 @@
 {
   "pages": [
+
     "pages/index/index",
     "pages/logs/logs",
-    "pages/pay/pay"
+    "pages/pay/pay",
+    "pages/infoLive/infoLive"
+
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -30,5 +33,4 @@
       }
     ]
   }
-
 }

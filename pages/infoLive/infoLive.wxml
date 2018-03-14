@@ -1,0 +1,44 @@
+<!--pages/infoLive/infoLive.wxml-->
+<view class=".container">
+  <view class="liveTitle">
+    <view><text class="title">如何重塑自己的职业价值最终克服焦虑？</text></view>
+    <view class="liveTitleBottom">
+      <view class="liveBox"><text>视频直播</text></view>
+      <view class="livePoint">Loa...、知否知..等5266人参与</view>
+    </view>
+  </view>
+
+  <view class="liveHost">
+    <view class="livePerson">
+      <view class="personPic"><image class="personPic_" src="https://pic3.zhimg.com/v2-3a31a2bc8fd9ef252e8b048e197a5920_l.jpg"></image></view>
+      <view class="personWrap">
+        <view class="personName">lukehou</view>
+        <view class="personIcon">主讲人</view>
+      </view>
+    </view>
+
+    <view class="personIntro">Luke后显慧 三节课的创始人显慧 三节课的创始人显慧 三节课的创始人显慧 三节课的创始人显慧 三节课的创始人显慧 三节课的创始人显慧 三节课的创始人</view>
+  </view>
+
+  <view class="liveContent">
+    <view class="contentTitle"><text>内容大纲</text></view>
+    <view class="contentCon">
+      <text>2017年互联网人显然更焦虑了。流量红利消失、用户增长乏力。职业边际模糊。旧有职业不断消失。人工智能、区块链等新技术的涌现让我们焦虑不安。慢慢睇我 们发现，信息越多越焦虑。能力越多越淡定！我们一起去寻找互联网人焦虑的底层原因，不断重塑自己的职业价值，寻找到最终克服焦虑的未3年规划，找到属于你的成功模式。</text>
+    </view>
+  </view>
+
+  <view class="liveInfo">
+    <view class="liveInfoTitle">Live须知</view>
+    <view class="liveInfoCon">版权声明：讲者在本产品上发表的全部原创内容（包括但不限于文字、音频、图片等）著作权均归江浙本人所有。未经讲者授权许可，听众用户不得以任何载体或形式使用讲者的内容。</view>
+  </view>
+
+</view>
+
+<view class="liveBottomBar">
+  <view class="share">
+    <image src="../../image/share.png"></image>
+    <text>分享</text>
+  </view>
+
+  <button class="button" type="primary">进入直播</button>
+</view>

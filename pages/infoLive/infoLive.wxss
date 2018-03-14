@@ -1,0 +1,145 @@
+/* pages/infoLive/infoLive.wxss */
+.container{
+  margin-bottom: 40rpx;
+}
+
+.liveTitle .title{
+  font-weight: bold;
+  font-size: 40rpx;
+}
+
+.liveTitleBottom{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50rpx 0;
+  border-bottom: 1px solid #aaa;
+}
+
+.liveBox{
+  border: 1px solid red;
+  font-size: 20rpx;
+  padding: 5rpx;
+  border-radius: 8rpx;
+  color: red;
+}
+
+.livePoint{
+  font-size: 30rpx;
+  margin-left: 30rpx;
+  color: #aaa;
+}
+
+.liveHost{
+  padding: 30rpx 0;
+  border-bottom: 1px solid #aaa;
+}
+
+.livePerson{
+  display: flex;
+  flex-direction: row;
+  margin: 30rpx 0;
+}
+
+.personPic{
+  width: 80rpx;
+  height: 80rpx;
+
+}
+
+.personPic_{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.personWrap{
+  margin-left: 20rpx;
+}
+
+.personName{
+  font-size: 30rpx;
+  font-family:'Arial, Helvetica, sans-serif';
+}
+
+.personIcon{
+  font-size: 20rpx;
+  border: 1rpx solid #aaa;
+  width: 55%;
+  padding: 5rpx;
+  border-radius: 8rpx;
+  margin-top: 10rpx;
+  color: #aaa;
+}
+
+.personIntro{
+  color: #aaa;
+  font-size: 30rpx;
+}
+
+.liveContent{
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #aaa;
+}
+
+.contentTitle{
+  margin: 30rpx 0;
+  font-size: 40rpx;
+}
+
+.contentCon{
+  color: #aaa;
+  font-size: 30rpx;
+}
+
+.liveInfo{
+  padding: 30rpx 0;
+  padding-bottom: 80rpx;
+}
+
+.liveInfoTitle{
+  margin: 30rpx 0;
+  font-size: 40rpx;
+}
+
+.liveInfoCon{
+  color: #aaa;
+  font-size: 30rpx;
+}
+
+.liveBottomBar{
+  padding: 10rpx 10rpx;
+  position: fixed;
+  width:100%;
+  height: 80rpx;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.liveBottomBar .share{
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  margin-left: 5%;
+}
+
+.liveBottomBar text{
+  font-size: 25rpx;
+  color: #aaa;
+}
+
+.liveBottomBar .share image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.liveBottomBar button{
+  width: 75%;
+  background: linear-gradient(to right, #18013c 0%,#7705c0 0%,#a117be 39%,#ec3bbd 100%);
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

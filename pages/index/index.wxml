@@ -97,18 +97,19 @@
           <view>精品内容，限时限量</view>  
         </view>
 
-        <view class="free">
+<!-- 限时免费 -->
+        <view class="free" bindtap="bindTempFree">
           <image class="freeInfoHeader" src="{{tempFreeImage}}"/>
           <view class="freeInfoFooter">
             <view>
-              <view class="footerHeader">如何重塑自己的职业价值最终克服焦虑？</view>
-              <view class="footerFooter">
-                2017年，互联网人为什么会焦虑？我们焦虑的根本原因是什么？如何才能保持自己的价值稳步提升？点击立即收听！
-              </view>
+              <view class="footerHeader">{{tempFreeTitle}}</view>
+              <view class="footerFooter">{{tempFreeContent}}</view>
             </view>
           </view>
         </view>
       </view>
+
+<!-- 编辑推荐 -->
 
       <view class="section">
         <view class="tuijian">编辑推荐</view>

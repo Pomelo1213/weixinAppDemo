@@ -12,9 +12,6 @@ Page({
       day: 0,
       weekend: ''
     },
-    iconSize: 10,
-    //iconColor: rgb(0, 255, 255),
-    iconType: 'search',
     searchName: false,
     bigFocus: false,
     smallFocus: false,
@@ -24,15 +21,13 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     tempFreeImage: 'https://pic4.zhimg.com/v2-33404db8d994c18d4f637d811fff375e_r.jpg',
+    tempFreeTitle: '如何重塑自己的职业价值最终克服焦虑？',
+    tempFreeContent: '2017年，互联网人为什么会焦虑？我们焦虑的根本原因是什么？如何才能保持自己的价值稳步提升？点击立即收听！',
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     logs: [],
     todayRecommend: [],
-    todayRecommendVersion: 0, //用版本号来标记 '今日推荐' 是否是最新的
     infos: [],
-    infosVersion: 0,
     indicatorDots: false,
-    autoplay: false,
-    interval: 5000,
     duration: 1000
   },
   //事件处理函数
@@ -61,6 +56,11 @@ Page({
       bodyCover: false
     })
   },
+  bindTempFree: function(){
+    wx.navigateTo({
+      url: '../infoLive/infoLive',
+    })
+  },
   onLoad: function () {
     //获取时间
     var date = new Date()
@@ -72,53 +72,15 @@ Page({
       ['time.weekend']: weekend[date.getDay()]
     })
 
-    //今日推荐
-    if (this.data.todayRecommendVersion !== app.globalData.todayRecommendVersion){
-      if (app.globalData.todayRecommend.length !== 0){
-        this.setData({
-          todayRecommend: app.globalData.todayRecommend,
-          todayRecommendVersion: app.globalData.todayRecommendVersion
-        })
-      }else{
-        wx.request({  //如果全局中也没有，就去请求
-          url: requestRecommendUrl,
-          data: {
-            hello: 'world'
-          },
-          success: function(e){
-            console.log('request success: ', e.data)
-            //这里请求成功了，会设置app中的变量值，然后在设置一个callback来设置当前page的变量值
-          },
-          fail: function(err){
-            //console.log('request fail: ', err.data)
-          }
-        })
-      }
-    }
-
+    //今日推荐，在页面里，不应该去请求，应该交给app加载的时候去请求。
+    this.setData({
+      todayRecommend: app.globalData.todayRecommend,
+    })
+      
     //编辑推荐
-    if (this.data.infosVersion !== app.globalData.infosVersion) {
-      if (app.globalData.infos.length !== 0) {
-        this.setData({
-          infos: app.globalData.infos,
-          infosVersion: app.globalData.infosVersion
-        })
-      } else {
-        wx.request({
-          url: requestRecommendUrl,
-          data: {
-            hello: 'world'
-          },
-          success: function (e) {
-            console.log('request success: ', e.data)
-            //这里请求成功了，会设置app中的变量值，然后在设置一个callback来设置当前page的变量值
-          },
-          fail: function (err) {
-            console.log('request fail: ', err.data)
-          }
-        })
-      }
-    }
+    this.setData({
+      infos: app.globalData.infos,
+    })
 
     if (app.globalData.userInfo) {
       this.setData({
