@@ -17,7 +17,7 @@
   <view class="header clearfix">
     <view class="title">
       <view>今日推荐</view>
-      <view class="date">3月6日 星期二</view>
+      <view class="date">{{time.month}}月{{time.day}}日 {{time.weekend}}</view>
     </view>
 
     <view class="search">

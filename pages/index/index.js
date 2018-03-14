@@ -1,11 +1,17 @@
 //index.js
 const requestRecommendUrl = require('../../config').requestRecommendUrl
+const util = require('../../utils/util.js')
 
 //获取应用实例
 const app = getApp()
 
 Page({
   data: {
+    time: {
+      month: 0,
+      day: 0,
+      weekend: ''
+    },
     iconSize: 10,
     //iconColor: rgb(0, 255, 255),
     iconType: 'search',
@@ -56,6 +62,16 @@ Page({
     })
   },
   onLoad: function () {
+    //获取时间
+    var date = new Date()
+    var weekend = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
+    //var weekend = date.getDay()
+    this.setData({
+      ['time.month']: date.getMonth()+1,
+      ['time.day']: date.getDate(),
+      ['time.weekend']: weekend[date.getDay()]
+    })
+
     //今日推荐
     if (this.data.todayRecommendVersion !== app.globalData.todayRecommendVersion){
       if (app.globalData.todayRecommend.length !== 0){
@@ -64,7 +80,7 @@ Page({
           todayRecommendVersion: app.globalData.todayRecommendVersion
         })
       }else{
-        wx.request({
+        wx.request({  //如果全局中也没有，就去请求
           url: requestRecommendUrl,
           data: {
             hello: 'world'
