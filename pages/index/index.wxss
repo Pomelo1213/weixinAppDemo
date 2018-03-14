@@ -6,7 +6,7 @@
   background-color: white;
   box-sizing: border-box;
   padding: 28rpx 20rpx;
-  z-index: 2;
+  z-index: 3;
   display: none;
   transition: all 1s ease;
 }

@@ -32,7 +32,7 @@
 
     <main>
       <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-        <block wx:for="{{imgUrls}}">
+        <block wx:for="{{todayRecommend}}">
           <swiper-item>
             <!-- <text>{{autoplay}}</text> -->
 
