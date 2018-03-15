@@ -1,0 +1,6 @@
+<template name="personalClassHeader">
+  <view class="classHeaderImage">
+    <image src="{{imgUrl}}"></image>
+  </view>
+
+</template>

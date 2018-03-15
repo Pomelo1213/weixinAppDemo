@@ -1,0 +1,5 @@
+<template name="bottomButton">
+  <view class="bottomButton">
+    <button>{{hasPay}}</button>
+  </view>
+</template>

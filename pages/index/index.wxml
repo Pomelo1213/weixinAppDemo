@@ -31,10 +31,9 @@
   </view>
 
     <main>
-      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <swiper indicator-dots="{{indicatorDots}}" duration="{{duration}}">
         <block wx:for="{{todayRecommend}}">
-          <swiper-item>
-            <!-- <text>{{autoplay}}</text> -->
+          <swiper-item data-item="{{item}}" bindtap="bindNavigatorClass">
 
               <view class="imgContent">
                 <image src="{{item.img}}" class="slide-image"/>

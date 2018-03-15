@@ -61,6 +61,18 @@ Page({
       url: '../infoLive/infoLive',
     })
   },
+  bindNavigatorClass: function(e){
+    console.log(e.currentTarget.dataset.item.img)
+    var imageUrl = e.currentTarget.dataset.item.img
+    wx.navigateTo({
+      url: '../personalClass/personalClass?imageUrl=' + imageUrl,
+      success: function(res) {
+        //console.log(res)
+      },
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
   onLoad: function () {
     //获取时间
     var date = new Date()

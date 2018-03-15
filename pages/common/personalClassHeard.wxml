@@ -1,0 +1,16 @@
+<template name="personalClassHeard">
+  <view class="personalWrap">
+    <view class="personalHeard">你将听到</view>
+    <block wx:for="{{items}}" wx:for-item="item" wx:for-index="index">
+
+    <view class="heard">
+      <view class="index">{{index+1}}</view>
+      <view class="info {{index+1 === items.length?'last':''}}">
+        <view class="title">{{item.title}}</view>
+        <view class="time">{{item.time}}</view>
+      </view>
+    </view>
+
+    </block>
+  </view>
+</template>

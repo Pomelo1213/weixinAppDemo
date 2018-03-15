@@ -1,0 +1,25 @@
+<import src="../common/personalClassHeader.wxml" />
+<import src="../common/personalClassFooter.wxml" />
+<import src="../common/personalClassHeard.wxml" />
+
+<view class="body">
+  <template is="personalClassHeader" data="{{imgUrl}}" />
+
+
+  <view class="classHeaderIntro">
+    <view class="classHost">{{hostName}}</view>
+    <view class="hostInfo">{{hostInfo}}</view>
+  </view>
+
+  <view class="classHeard">
+    <template is="personalClassHeard" data="{{items:  lessons}}" />
+  </view>
+
+
+  <template is="personalClassFooter" />
+
+</view>
+
+
+
+

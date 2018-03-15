@@ -1,0 +1,6 @@
+<template name="personalClassFooter">
+  <view class="payInfo">
+    <view>购买须知</view>
+    <view>1.本课程为音频+图文形式，每周一、周四定期封信；2.本课程为虚拟内容服务，购买前轻谨慎阅读，购买后不接受退款。</view>
+  </view>
+</template>

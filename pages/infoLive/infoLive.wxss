@@ -163,4 +163,7 @@
   width: 100%;
   margin-right: 30rpx;
   background: linear-gradient(to right, #ff9266 1%,#ff6263 33%,#ff7564 67%,#ff6263 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
