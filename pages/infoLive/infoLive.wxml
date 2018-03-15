@@ -8,6 +8,9 @@
     </view>
   </view>
 
+
+
+
   <view class="liveHost">
     <view class="livePerson">
       <view class="personPic"><image class="personPic_" src="https://pic3.zhimg.com/v2-3a31a2bc8fd9ef252e8b048e197a5920_l.jpg"></image></view>
@@ -34,11 +37,13 @@
 
 </view>
 
+
 <view class="liveBottomBar">
   <view class="share">
+    <button open-type="share" class="shareButton"><text>分享</text></button>
     <image src="../../image/share.png"></image>
-    <text>分享</text>
   </view>
 
-  <button class="button" type="primary">进入直播</button>
+  <button class="button" type="primary">{{hasPay?'进入Live直播':'购买进入'}}</button>
+  <!-- 需要判断用户是否购买过 -->
 </view>
