@@ -1,0 +1,13 @@
+<template name="personalClassSolution">
+  <view class="solution">
+    <view class="help">帮你解决</view>
+    <block wx:for="{{items}}" wx:for-item="item">
+      <view class="solutionWrap">
+          <view class="solutionPic">
+            <image style="width: 30rpx; height: 30rpx;" src="../../image/correct.png"></image>
+          </view>
+          <view class="solutionContent">{{item.content}}</view>
+        </view>
+    </block>
+  </view>
+</template>

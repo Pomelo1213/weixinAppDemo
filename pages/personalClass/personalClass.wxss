@@ -42,7 +42,6 @@
 .heard{
   display: flex;
   flex-direction: row;
-
 }
 
 .index{
@@ -78,6 +77,36 @@
   color: #aaa;
 }
 
+ /* ///////////////////////帮你解决/////////////////////// */
+.solution{
+  background-color: white;
+  padding: 0 20rpx;
+  padding-bottom: 20rpx;
+  margin: 30rpx 0;
+}
+
+.help{
+  padding: 30rpx 0;
+}
+
+.solutionWrap{
+  display: flex;
+  flex-direction: row;
+}
+
+.solutionPic{
+  width: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20rpx;
+}
+
+.solutionContent{
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+}
 
 
 
@@ -86,7 +115,7 @@
   padding: 0 20rpx;
   color: #aaa;
   background-color: white;
-  padding-bottom: 20rpx;
+  padding-bottom: 100rpx;
 }
 
 .payInfo view:nth-child(1){
@@ -97,3 +126,23 @@
 .payInfo view:nth-child(2){
   font-size: 25rpx;
 }
+
+ /* ///////////////////////底部Button/////////////////////// */
+ .bottomButton{
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   height: 80rpx;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-top: 1rpx solid rgb(240, 240, 240);
+ }
+
+ .bottomButton button{
+   width: 95%;
+   height: 90%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }

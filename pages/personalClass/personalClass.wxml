@@ -1,6 +1,8 @@
 <import src="../common/personalClassHeader.wxml" />
 <import src="../common/personalClassFooter.wxml" />
 <import src="../common/personalClassHeard.wxml" />
+<import src="../common/personalClassSolution.wxml" />
+<import src="../common/bottomButton.wxml" />
 
 <view class="body">
   <template is="personalClassHeader" data="{{imgUrl}}" />
@@ -15,9 +17,17 @@
     <template is="personalClassHeard" data="{{items:  lessons}}" />
   </view>
 
+  <view class="solution">
+    <template is="personalClassSolution" data="{{items: solutions}}" />
+  </view>
+
 
   <template is="personalClassFooter" />
 
+</view>
+
+<view>
+  <template is="bottomButton" data="{{hasPay: hasPay===true?'进入课程':'支付购买'}}"/>
 </view>
 
 
