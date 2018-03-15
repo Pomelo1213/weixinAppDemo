@@ -75,6 +75,21 @@
 .personIntro{
   color: #aaa;
   font-size: 30rpx;
+  height: 120rpx;
+  overflow: hidden;
+}
+
+.personIntro.active{
+  height: 100%;
+}
+
+.textCover{
+  font-size: 25rpx;
+}
+
+.textCover.active{
+  font-size: 25rpx;
+  display: none;
 }
 
 .liveContent{
@@ -137,6 +152,7 @@
   background-color: transparent;
   font-size: 25rpx;
   padding-top: 30rpx;
+  color: #aaa;
 }
 
 .shareButton::after{
@@ -145,5 +161,6 @@
 
 .button{
   width: 100%;
-  margin-right: 20rpx;
+  margin-right: 30rpx;
+  background: linear-gradient(to right, #ff9266 1%,#ff6263 33%,#ff7564 67%,#ff6263 100%);
 }

@@ -19,8 +19,10 @@
         <view class="personIcon">主讲人</view>
       </view>
     </view>
-
-    <view class="personIntro">Luke后显慧 三节课的创始人显慧 三节课的创始人显慧 三节课的创始人显慧 三节课的创始人显慧 三节课的创始人显慧 三节课的创始人显慧 三节课的创始人</view>
+    <view class="personIntroWrap" bindtap="bindPersonIntro">
+      <view class="personIntro {{IntroShowMore === true?'active':''}}">Luke后显慧 三节课的创始人显慧 三节课的创始人显慧 三节课的创始人显慧 三节课的创慧 三节课的创始人显慧 三节课的创始人显慧 三节课的创慧 三节课的创始人显慧 三节课的创始人显慧 三节课的创始人显慧 三节课的创始人显慧 三节课的创始人显慧 三节课的创始人</view>
+      <view class="textCover {{IntroShowMore === false?'':'active'}}">查看更多</view>
+    </view>
   </view>
 
   <view class="liveContent">
