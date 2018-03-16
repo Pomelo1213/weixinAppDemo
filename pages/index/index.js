@@ -62,22 +62,27 @@ Page({
     })
   },
   bindNavigatorClass: function(e){
-    console.log(e.currentTarget.dataset.item.img)
-    var imageUrl = e.currentTarget.dataset.item.img
+    var infosId = e.currentTarget.dataset.item.infosId
     wx.navigateTo({
-      url: '../personalClass/personalClass?imageUrl=' + imageUrl,
-      success: function(res) {
-        //console.log(res)
-      },
+      url: '../personalClass/personalClass?infosId=' + infosId,
+      success: function(res) {},
       fail: function(res) {},
       complete: function(res) {},
+    })
+  },
+  bindToClass: function(e){
+    var infosId = e.currentTarget.dataset.item.infosId
+    wx.navigateTo({
+      url: '../personalClass/personalClass?infosId=' + infosId,
+      success: function(res){},
+      fail: function(res){},
+      complete: function(res){}
     })
   },
   onLoad: function () {
     //获取时间
     var date = new Date()
     var weekend = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
-    //var weekend = date.getDay()
     this.setData({
       ['time.month']: date.getMonth()+1,
       ['time.day']: date.getDate(),

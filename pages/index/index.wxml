@@ -114,11 +114,13 @@
         <view class="tuijian">编辑推荐</view>
         <view class="newsList">
           <view wx:for="{{infos}}" wx:for-item="info" wx:key="{{id}}" class="news clearfix">
+            <view data-item="{{info}}" bindtap="bindToClass">
               <view class="newsLeft">
                 <view class="leftTitle">{{info.title}}</view>
                 <view class="leftInfo">{{info.content}}</view>
               </view>
               <image class="newsRight" src="{{info.pic}}"/>
+            </view>
           </view>
         </view>
       </view>
