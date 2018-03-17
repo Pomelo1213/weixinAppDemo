@@ -138,6 +138,7 @@
    justify-content: center;
    border-top: 1rpx solid rgb(240, 240, 240);
    background-color: white;
+   padding: 10rpx 0;
  }
 
  .bottomButton button{

@@ -131,6 +131,7 @@
   background-color: white;
   display: flex;
   justify-content: space-around;
+  border-top: 1rpx solid rgb(240, 240, 240);
 }
 
 .share{
@@ -145,6 +146,7 @@
   position: absolute;
   top: 0;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 .shareButton{
@@ -153,6 +155,7 @@
   font-size: 25rpx;
   padding-top: 30rpx;
   color: #aaa;
+  z-index: 2;
 }
 
 .shareButton::after{
